@@ -25,21 +25,14 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("assets/bg-main-mobile.png");
-    font-family: var(--ff-primary);
-    /* min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: var(--ff-primary);
     font-size: 18px;
     color: var(--clr-prim-sblue);
     font-weight: 300;
-    background-color: var(--clr-bgmain-db); */
+    background-color: var(--clr-bgmain-db);
 }
 header {
-    margin: 40px 24px 64px 24px
+    margin: 40px 24px 64px 24px;
 }
 h1 {
     font-size: 40px;
@@ -53,6 +46,12 @@ footer {
 /* -------------------- 
     Class Styles
 ---------------------*/
+/* bg image main section */
+.bg-main-image {
+    background-image: url("assets/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
 /* intro section */
 .intro {
@@ -77,6 +76,13 @@ footer {
 .app-card {
     grid-area: 1/1/3/2;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app-card img {
+    width: 60%;
 }
 /* pattern-card section */
 .pattern-card {
