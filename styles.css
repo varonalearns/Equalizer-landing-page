@@ -1,0 +1,94 @@
+/* ------------------------------ Default Mobile Design ------------------------------ */
+
+/* -------------------- 
+    Variables
+---------------------*/
+:root {
+    /* Primary colors */
+    --clr-prim-blue: hsl(177, 68%, 64%);
+    --clr-prim-orange: hsl(12, 94%, 65%);
+    --clr-prim-yellow: hsl(33, 100%, 70%);
+
+    /* Secondary colors */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(244, 23%, 12%);
+
+    /* Fonts */
+    --ff-primary: 'IBM Plex Sans', sans-serif;
+}
+/* -------------------- 
+    Global Styles
+---------------------*/
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("assets/bg-main-mobile.png");
+    font-family: var(--ff-primary);
+    /* min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff-primary);
+    font-size: 18px;
+    color: var(--clr-prim-sblue);
+    font-weight: 300;
+    background-color: var(--clr-bgmain-db); */
+}
+header {
+    margin: 40px 24px 64px 24px
+}
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+footer {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+/* -------------------- 
+    Class Styles
+---------------------*/
+
+/* intro section */
+.intro {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.intro p {
+    line-height: 1.75;
+}
+
+/* cards section */
+.cards {
+    width: 100%;
+}
+.container {
+    display: grid;
+}
+.container img {
+    width: 100%;
+}
+/* app-card section */
+.app-card {
+    grid-area: 1/1/3/2;
+    z-index: 1;
+}
+/* pattern-card section */
+.pattern-card {
+    background-color: var(--clr-black);
+    grid-area: 2/1/4/2;
+    margin-top: 250px;
+}
+/* sales-card section */
+.sales-card{
+    background-color: var(--clr-prim-orange);
+    color: var(--clr-white);
+}
+.sales-card button {
+    display: block;
+}
