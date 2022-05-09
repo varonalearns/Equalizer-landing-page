@@ -52,7 +52,7 @@ With this project, I learned more about how background-image works. I spent a lo
 .bg-main-image {
     background-image: url("assets/bg-main-mobile.png");
     background-repeat: no-repeat;
-    background-position: ;
+    background-position: 0rem -14rem;
 }
 ```
 

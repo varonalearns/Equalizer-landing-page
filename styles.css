@@ -32,7 +32,7 @@ body {
     background-color: var(--clr-bgmain-db);
 }
 header {
-    margin: 40px 24px 64px 24px;
+    padding: 40px 24px 64px 24px;
 }
 h1 {
     font-size: 40px;
@@ -50,7 +50,7 @@ footer {
 .bg-main-image {
     background-image: url("assets/bg-main-mobile.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: 0rem -14rem;
 }
 
 /* intro section */
