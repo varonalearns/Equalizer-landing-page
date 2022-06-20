@@ -54,11 +54,13 @@ nav img:hover{
 /* -------------------- 
     Class Styles
 ---------------------*/
-/* bg image main section */
 .bg-main-image {
     background-image: url("assets/bg-main-mobile.png");
     background-repeat: no-repeat;
     background-position: 0rem -14rem;
+}
+.decor-img {
+    display: none;
 }
 
 /* intro section */
@@ -76,6 +78,8 @@ nav img:hover{
 }
 .container {
     display: grid;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .container img {
     width: 100%;
@@ -87,7 +91,6 @@ nav img:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
 }
 .app-card img {
     width: 50%;
@@ -96,8 +99,7 @@ nav img:hover{
 .pattern-card {
     background-color: var(--clr-black);
     padding: 0px 50px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 15px;
     margin-top: -18rem;
 }
 /* sales-card section */
@@ -173,7 +175,80 @@ nav img:hover{
     /* -------------------- 
         Global Styles
     ---------------------*/
+    body {
+        max-width: 768px;
+    }
+    h1 {
+        font-size: 64px;
+    }
+    nav {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
     /* -------------------- 
         Class Styles
     ---------------------*/
+    /* bg image main section */
+    .bg-main-image {
+        background-image: url("assets/bg-main-tablet.png");
+        background-repeat: no-repeat;
+        background-position: -20rem -16rem;
+    }
+    /* intro section */
+    .intro {
+        position: relative;
+    }
+    .intro-txt {
+        width: 75%;
+    }
+    .decor-img {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        left: 34rem;
+        bottom: 12rem;
+        width: 15rem;
+    }
+    /* app-card section */
+    .app-card {
+        display: block;
+        margin-left: 6rem;
+        margin-bottom: -9rem;
+    }
+    .app-card img {
+        width: 40%;
+    }
+    /* pattern-card section */
+    .pattern-card {
+        margin: -18rem 24px 0 24px;
+        display: flex;
+        justify-content: center;
+        height: 558px;
+    }
+    .pattern-card img {
+        width: 45%;
+        height: 61%;
+    }
+    /* sales-card section */
+    .sales-card {
+        z-index: 2;
+        margin-right: 6rem;
+        margin-left: 17rem;
+        margin-top: -25rem;    
+    }
+     /* footer section */
+     .inner-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .rights-reserved {
+        width: 50%;
+     }
+
+}
+/* ------------------------------ Desktop Design ------------------------------ */
+@media screen and (min-width: 700px) {
+
 }
