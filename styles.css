@@ -255,6 +255,11 @@ nav svg {
     body {
         max-width: 1440px;
         font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
     header {
         padding: 40px 8rem 64px 8rem;
@@ -333,5 +338,20 @@ nav svg {
     }
     .challenge a:hover {
         color: var(--clr-prim-orange);
+    }
+}
+
+/* ------------------------------ Lg Desktop Design ------------------------------ */
+@media screen and (min-width: 1445px) {
+    /* -------------------- 
+        Global Styles
+    ---------------------*/
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
